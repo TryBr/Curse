@@ -1,0 +1,76 @@
+.navigation-panel-wrapper
+  display: none
+  *
+    transition: all 0s
+    -webkit-transition: all 0s
+
+  .navigation-panel-menu
+    background: #00998d
+    display: none
+    padding-bottom: 92px
+    .navigation-panel-menu-header
+      clear: both
+      .navigation-panel-menu-logo
+        margin: 25px 0
+        margin-left: 20px
+        width: 150px
+        height: 55px
+        float: left
+        .navigation-panel-menu-logo__img
+          width: 100%
+      .navigation-panel-menu-btn
+        background: url("../img/menu-close__btn.png") no-repeat
+        width: 25px
+        height: 25px
+        position: absolute
+        top: 40px
+        right: 20px
+        background-size: contain
+        cursor: pointer
+    .navigation-panel-menu-list
+      list-style: none
+      padding: 0px
+      margin: 0px
+      clear: both
+      .menu-list-item
+        border-top: 3px solid #4db8af
+        &:last-child
+          border-bottom: 3px solid #4db8af
+        &:hover
+          background: #ffffff
+          .menu-list-item__link
+            color: #00998d
+        .menu-list-item__link
+          font-size: 40px
+          color: #ffffff
+          text-transform: uppercase
+          padding: 10px 0px
+          padding-left: 20px
+          display: block
+          text-decoration: none
+  .navigation-panel
+    background: #6f6f6e
+    height: 121px
+    position: relative
+    .navigation-panel-logo
+      margin: 29px 0px
+      margin-left: 20px
+      width: 150px
+      float: left
+      .navigation-panel-logo__img
+        width: 100%
+    .navigation-panel-btn
+      background: url("../img/menu-open__btn.png") no-repeat
+      width: 25px
+      height: 25px
+      position: absolute
+      top: 48px
+      right: 20px
+      background-size: contain
+      cursor: pointer
+
+
+
+@media only screen and (max-width : 1263px)
+  .navigation-panel-wrapper
+    display: block

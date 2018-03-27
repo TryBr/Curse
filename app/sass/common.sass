@@ -1,0 +1,37 @@
+@import "vars"
+
+.clearfix:after
+  content: ""
+  display: table
+  clear: both
+
+.main-container
+  min-height: 100%
+
+.container-fixed
+  width: 1264px
+  padding: 0px
+  margin: 0 auto
+  position: relative
+  &.container-fixed--news
+    width: 945px
+    margin: 0 auto
+
+input
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+body
+  position: relative
+  background: #fff
+  font-family: "ProximaNovaExCn-Regular", Optima, Arial, sans-serif
+  overflow-x: hidden
+
+
+@media only screen and (max-width : 1263px)
+  .container-fixed
+    width: 100% !important
+
+  .swiper-pagination
+    display: none

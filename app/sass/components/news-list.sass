@@ -1,0 +1,90 @@
+.news-list
+  .news-list-item
+    margin-bottom: 36px
+    .news-list-item-photo
+      overflow: hidden
+      width: 464px
+      height: 270px
+      float: left
+      margin-right: 48px
+      .news-list-item-photo__img
+        width: 100%
+        max-height: 270px
+    .news-list-item-info
+      float: right
+      width: 433px
+      margin-top: 25px
+      font-family: "ProximaNovaExCn-Regular"
+      .news-list-item-info__date
+        font-size: 24px
+        color: #6f6f6e
+      .news-list-item-info__link
+        color: #00998d
+        font-size: 30px
+        text-decoration: none
+        border: 1px solid transparent
+        line-height: 37px
+        &:hover
+          border-bottom: 1px solid #00998d
+          opacity: 1
+      .news-list-item-info__description
+        font-size: 24px
+        color: #6f6f6e
+        margin-top: 35px
+        line-height: 30px
+    .news-list-item__description
+      font-size: 24px
+      color: #6f6f6e
+      margin-top: 35px
+      line-height: 30px
+      &.news-list-item__description--mobile
+        display: none
+
+
+@media only screen and (max-width : 1263px)
+  .news-list
+    .news-list-item
+      border-bottom: 1px solid #cdcdcd
+      padding-bottom: 30px
+      .news-list-item-photo
+        width: 100%
+        height: auto
+        margin-bottom: 30px
+        margin-top: 30px
+        float: none
+        .news-list-item-photo__img
+          max-width: 464px
+      .news-list-item-info
+        width: 100%
+        float: none
+        .news-list-item-info__link
+          border-bottom: 1px solid #00998d
+          opacity: 1
+        .news-list-item-info__description
+          display: none
+      .news-list-item__description
+        &.news-list-item__description--mobile
+          display: block
+
+@media only screen and (max-width : 639px)
+  .news-list
+    .news-list-item
+      border-bottom: 1px solid #cdcdcd
+      padding-bottom: 30px
+      &:last-child
+        border-bottom: 0px
+      .news-list-item-photo
+        width: 100%
+        height: auto
+        margin-bottom: 30px
+        margin-top: 30px
+      .news-list-item-info
+        width: 100%
+        .news-list-item-info__link
+          border-bottom: 1px solid #00998d
+          opacity: 1
+        .news-list-item-info__description
+          display: none
+      .news-list-item__description
+        &.news-list-item__description--mobile
+          display: block

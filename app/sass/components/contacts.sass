@@ -1,0 +1,162 @@
+.contacts
+  margin-top: 67px
+  margin-bottom: 72px
+  .contacts-title-wrapper
+    position: relative
+    &:before
+      content: ''
+      background: #cdcdcd
+      height: 1px
+      width: 100%
+      display: block
+      top: 51%
+      left: 0px
+      right: 0px
+      position: absolute
+    .contacts-title-wrapper__title
+      color: #00998d
+      text-transform: uppercase
+      font-size: 48px
+      position: relative
+      text-align: center
+      letter-spacing: 1.2px
+      margin: 0 auto
+      display: table
+      background: #fff
+      padding: 0px 20px
+
+  .contacts-info
+    text-align: center
+    margin-top: 20px
+    margin-bottom: 52px
+    .contacts-info__location
+      font-size: 24px
+      color: #6f6f6e
+      font-family: "ProximaNovaExCn-Bold"
+    .contacts-info__address
+      font-size: 24px
+      color: #6f6f6e
+      margin-top: -10px
+      margin-bottom: -10px
+    .contacts-info__email
+      font-size: 24px
+      text-decoration: none
+      color: #00998d
+      position: relative
+      margin-left: 38px
+      &:before
+        content: ''
+        background: url("../img/email__icon.png") no-repeat
+        width: 26px
+        height: 18px
+        position: absolute
+        left: -40px
+        top: 6px
+
+  .contacts-managers
+    margin-top: 35px
+    .contacts-managers-person
+      float: left
+      width: 600px
+      margin-right: 64px
+      &:nth-child(2n+2)
+        margin-right: 0px
+      .contacts-managers-person-photo-wrapper
+        border-radius: 50%
+        overflow: hidden
+        width: 192px
+        height: 192px
+        float: left
+        background: #f5f5f5
+        .contacts-managers-person__photo
+          background: #f5f5f5
+
+      .contacts-managers-person-info
+        float: left
+        margin-left: 32px
+        margin-top: 3px
+        width: 350px
+        .contacts-managers-person-info__text
+          font-size: 24px
+          color: #6f6f6e
+          line-height: 30px
+        .contacts-managers-person-info__fio
+          font-family: "ProximaNovaExCn-Bold"
+          font-size: 24px
+          color: #6f6f6e
+        .contacts-managers-person__email
+          font-size: 24px
+          text-decoration: none
+          color: #00998d
+          position: relative
+          margin-left: 38px
+          &:before
+            content: ''
+            background: url("../img/email__icon.png") no-repeat
+            width: 26px
+            height: 18px
+            position: absolute
+            left: -40px
+            top: 6px
+        .contacts-managers-person__phone
+          font-size: 30px
+          color: #6f6f6e
+          padding-left: 40px
+          margin-top: 3px
+          background: url("../img/phone__icon.png") no-repeat left center
+          text-decoration: none
+          display: block
+
+
+
+@media only screen and (max-width : 1263px)
+  .contacts
+    margin-top: 0px
+    margin-bottom: 0px
+    .contacts-title-wrapper
+      &:before
+        display: none
+      .contacts-title-wrapper__title
+        width: auto
+        margin-right: auto
+        margin-left: auto
+    .contacts-managers
+      width: 640px
+      margin-left: auto
+      margin-right: auto
+      .contacts-managers-person
+        margin-bottom: 100px
+        float: none
+        width: 574px
+        clear: both
+        overflow: hidden
+        margin-right: auto !important
+        margin-left: auto !important
+
+@media only screen and (max-width : 639px)
+  .contacts
+    margin-top: 0px
+    margin-bottom: 0px
+    .contacts-title-wrapper
+      &:before
+        display: none
+      .contacts-title-wrapper__title
+        width: auto
+        margin-right: auto
+        margin-left: auto
+    .contacts-managers
+      width: auto
+      .contacts-managers-person
+        float: none
+        width: auto
+        margin: 0px
+        margin-bottom: 50px
+        .contacts-managers-person-photo-wrapper
+          margin: 0 auto
+          float: none
+          margin-bottom: 20px
+        .contacts-managers-person-info
+          float: none
+          width: auto
+          margin-left: 20px
+          margin-right: 20px

@@ -1,0 +1,119 @@
+.program-structure
+  font-family: "ProximaNovaExCn-Regular"
+  text-align: center
+  margin-top: 77px
+  position: relative
+  height: 752px
+  &.program-structure--mobile
+    display: none
+  .program-structure__title
+    font-size: 30px
+    color: #00998d
+    text-align: center
+    text-transform: uppercase
+    font-weight: normal
+    margin: 0px
+    letter-spacing: 1.2px
+  .program-structure-rows
+    position: absolute
+    width: 100%
+    left: 0px
+    right: 0px
+    top: 86px
+    .program-structure-row
+      height: 216px
+      &.program-structure-row--color-gray
+        background: #ededed
+      &.program-structure-row--color-white
+        background: #fff
+        height: 234px
+
+  .container-fixed
+    position: absolute
+    left: 0px
+    right: 0px
+    top: 0px
+    margin: 0 auto
+
+  .program-structure-flows
+    background: url("../img/program-structure-flows.png") no-repeat 0px 20px
+    position: absolute
+    width: 300px
+    height: 650px
+    top: 158px
+    left: 28px
+    .program-structure-flows-info
+      text-align: left
+      padding-left: 52px
+      padding-top: 3px
+      .program-structure-flows-info-block
+        margin-bottom: 88px
+        position: relative
+        height: 75px
+        &.program-structure-flows-info-block--two
+          margin-bottom: 160px
+        .program-structure-flows-info-block__title
+          font-size: 30px
+          color: #00998d
+          text-transform: uppercase
+        .program-structure-flows-info-block__description
+          color: #6f6f6e
+          font-size: 24px
+          width: 110px
+          line-height: 28px
+          padding-left: 2px
+          position: absolute
+          top: 45px
+
+  .program-structure-detail-info
+    position: absolute
+    right: 0
+    top: 167px
+    .program-structure-detail-info-block
+      width: 492px
+      margin-bottom: 76px
+      .program-structure-detail-info-block-item
+        margin-bottom: 0px
+        .info-block-item__title
+          font-size: 24px
+          color: #6f6f6e
+          text-transform: uppercase
+          font-family: "ProximaNovaExCn-Bold"
+          float: left
+          width: 100px
+        .info-block-item__description
+          font-size: 24px
+          color: #6f6f6e
+          font-family: "ProximaNovaExCn-Regular"
+          float: left
+          width: 380px
+          text-align: left
+          margin-left: 10px
+          line-height: 34px
+
+  .program-structure-participants
+    position: absolute
+    top: 109px
+    left: 252px
+    .program-structure-participants__title
+      font-size: 30px
+      color: #00998d
+      text-align: center
+      text-transform: uppercase
+      font-weight: normal
+      margin: 0px
+      letter-spacing: 0px
+      margin-bottom: 18px
+
+
+@media only screen and (max-width : 1263px)
+  .program-structure
+    display: none
+    &.program-structure--mobile
+      display: block
+      height: auto
+      margin-top: 65px
+      .program-structure__img-mobile
+        width: 100%
+        margin-top: 10px
+        max-width: 640px

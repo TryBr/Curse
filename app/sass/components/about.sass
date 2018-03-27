@@ -1,0 +1,117 @@
+.about
+  font-family: "ProximaNovaExCn-Regular"
+  text-align: center
+  margin-top: 178px
+  .about__title
+    font-size: 48px
+    color: #00998d
+    text-align: center
+    text-transform: uppercase
+    font-weight: normal
+    margin: 0px
+    letter-spacing: 1.2px
+  .about__text
+    font-size: 24px
+    color: #6f6f6e
+    line-height: 32px
+    &.about__text--bold
+      font-family: "ProximaNovaExCn-Bold"
+
+  .about-items
+    width: 95%
+    margin: 0 auto
+    margin-top: 67px
+    .about-item
+      float: left
+      text-align: left
+      margin-right: 151px
+      margin-bottom: 90px
+      &:nth-child(3n+3)
+        margin-right: 0px
+      .about-item__icon
+        float: left
+      .about-item-info
+        float: left
+        margin-left: 33px
+        margin-top: 9px
+        .about-item-info__title
+          font-size: 24px
+          color: #00998d
+          font-family: "ProximaNovaExCn-Bold"
+        .about-item-info__description
+          color: #6f6f6e
+          font-size: 21px
+          width: 170px
+          line-height: 20px
+  .about-banner
+    height: 324px
+    background: url("../img/about/about-banner-bg.jpg") no-repeat center center #00998d
+    margin-top: 4px
+    padding-top: 83px
+    line-height: 32px
+    .about-banner__text
+      font-size: 24px
+      color: #fff
+      font-family: "ProximaNovaExCn-Regular"
+      text-align: center
+      margin-bottom: 22px
+      &.about-banner__text--bold
+        font-family: "ProximaNovaExCn-Bold"
+
+
+
+@media only screen and (max-width : 1263px)
+  .about
+    margin-top: 80px
+    .about__text
+      padding: 0 40px
+    .about-banner
+      height: auto
+      padding: 60px 20px
+      background-size: cover
+    .about-items
+      width: 768px
+      padding: 0 40px
+      margin-left: auto
+      margin-right: auto
+      .about-item
+        margin-right: 90px
+        margin-bottom: 90px
+        &:nth-child(3n+3)
+          margin-right: 90px
+        &:nth-child(2n+2)
+          margin-right: 0px
+
+
+@media only screen and (max-width : 767px)
+  .about
+    .about__text
+      padding: 0 20px
+    .about-items
+      padding: 0 20px
+      width: 320px
+      margin-left: auto
+      margin-right: auto
+      .about-item
+        margin-right: 0px
+        &:nth-child(3n+3)
+          margin-right: 0px
+        &:nth-child(2n+2)
+          margin-right: 0px
+        .about-item__icon
+          width: 36%
+          max-width: 120px
+        .about-item-info
+          width: 55%
+          margin-left: 9%
+
+@media only screen and (max-width : 480px)
+  .about
+    .about-items
+      .about-item
+        .about-item__icon
+          width: 36%
+          max-width: 120px
+        .about-item-info
+          width: 55%
+          margin-left: 9%

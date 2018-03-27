@@ -1,0 +1,163 @@
+.sticky-menu-wrapper
+  width: 100%
+  background: #6f6f6e
+  height: 90px
+  top: -90px
+  z-index: 99
+  position: fixed
+  //opacity: 0
+  //display: none
+  &.sticky-menu--active
+    //opacity: 1
+    //display: block
+    top: 0px
+    -webkit-transition: top 0.2s ease-out 0s
+    -moz-transition: top 0.2s ease-out 0s
+    -o-transition: top 0.2s ease-out 0s
+    transition: top 0.2s ease-out 0s
+  .sticky-menu-wrapper-logo
+    position: absolute
+    left: 0px
+    top: -12px
+    cursor: pointer
+  .sticky-menu
+    list-style: none
+    padding: 0
+    margin: 0 auto
+    width: 943px
+    margin-top: 30px
+    .sticky-menu-item
+      float: left
+      margin-right: 74px
+      position: relative
+      &:before
+        content: ''
+        background: 0 0
+        height: 90px
+        width: 163%
+        position: absolute
+        bottom: -17px
+        left: -28px
+        transform: skew(-34deg)
+        -webkit-transform: skew(-34deg)
+        -moz-transform: skew(-34deg)
+          -o-transform: skew(-34deg)
+      &:nth-child(2)
+        &:before
+          left: -20px
+      &:nth-child(3)
+        &:before
+          left: -25px
+        &:last-child
+          margin-right: 0px
+      &:last-child
+        margin-right: 0px
+      &:hover
+        .header-sub-menu
+          display: block
+        &:before
+          background: #00998d
+      .sticky-menu-item__link
+        text-decoration: none
+        color: #ffffff
+        font-size: 21px
+        text-transform: uppercase
+        font-family: "ProximaNovaExCn-Regular"
+        letter-spacing: 1px
+        display: block
+        padding-bottom: 9px
+        position: relative
+      .header-sub-menu
+        display: none
+        position: absolute
+        top: 71px
+        list-style: none
+        padding: 0
+        margin: 0px
+        left: -68px
+        .header-sub-menu-item
+          width: 168px
+          text-align: left
+          &:nth-child(2)
+            margin-top: 11px
+            margin-left: -36.5px
+          &:nth-child(3)
+            margin-top: 10px
+            margin-left: -72.5px
+          .header-sub-menu-item__link
+            text-decoration: none
+            color: #fff
+            font-size: 21px
+            text-transform: uppercase
+            font-family: ProximaNovaExCn-Regular
+            display: block
+            padding-bottom: 9px
+            position: relative
+            z-index: 2
+            padding-left: 27px
+            &:hover
+              color: #00998d
+            &:before
+              content: ''
+              background: 0 0
+              height: 54px
+              width: 101%
+              position: absolute
+              bottom: 0
+              left: -9px
+              right: 0
+              background: #00998d
+              transform: skew(-34deg)
+              -webkit-transform: skew(-34deg)
+              -moz-transform: skew(-34deg)
+              -o-transform: skew(-34deg)
+              z-index: -1
+            &:hover
+              &:before
+                background: #ffffff
+      &.sticky-menu-item--active
+        &:before
+          content: ''
+          right: 0
+          height: 90px
+          width: 163%
+          position: absolute
+          bottom: -17px
+          left: -28px
+          transform: skew(-34deg)
+          -webkit-transform: skew(-34deg)
+          -moz-transform: skew(-34deg)
+          -o-transform: skew(-34deg)
+          background: #00998d
+        &:nth-child(2)
+          &:before
+            content: ''
+            right: 0
+            height: 90px
+            width: 163%
+            position: absolute
+            bottom: -17px
+            left: -20px
+            transform: skew(-34deg)
+            -webkit-transform: skew(-34deg)
+            -moz-transform: skew(-34deg)
+            -o-transform: skew(-34deg)
+            background: #00998d
+        &:nth-child(3)
+          &:before
+            content: ''
+            right: 0
+            height: 90px
+            width: 163%
+            position: absolute
+            bottom: -17px
+            left: -28px
+            transform: skew(-34deg)
+            -webkit-transform: skew(-34deg)
+            -moz-transform: skew(-34deg)
+            -o-transform: skew(-34deg)
+            background: #00998d
+
+@media only screen and (max-width : 1263px)
+  .sticky-menu-wrapper
+    display: none !important
